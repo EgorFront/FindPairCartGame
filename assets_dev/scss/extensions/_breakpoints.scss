@@ -1,0 +1,26 @@
+// Variables
+
+$small: 420px;
+$medium: 600px;
+$large: 801px;
+$x-large: 1200px;
+
+// Mixin
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $small - 1) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (max-width: $medium - 1) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (max-width: $x-large - 1) { @content; }
+  }
+  @if $media == xl {
+    @media only screen and (min-width: $x-large) { @content; }
+  }
+}

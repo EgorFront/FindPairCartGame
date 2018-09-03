@@ -1,0 +1,21 @@
+// Extensions - Расширения test
+@import "extensions/reset",
+		"extensions/breakpoints";
+
+
+// Libs - Библиотеки
+//@import "libs/bootstrapGrid";
+
+
+// Variables - Переменные
+@import "variables/fonts",
+		"variables/global",
+		"variables/typography";
+
+// Sections - Дублирующиеся раздела сайта
+@import "sections/header",
+ 		"sections/navbar",
+		"sections/footer";
+
+// Pages - Страницы сайта
+@import "pages/home";
