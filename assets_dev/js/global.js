@@ -56,9 +56,11 @@ class Game {
 		// нужно чтобы игрок не мог беспорядочно тыкать по картам
 		function freezeGame(time){
 			that.gameField.removeEventListener('click', mainClickFunc)
+
 			setTimeout(function(){
 				that.gameField.addEventListener('click', mainClickFunc)
 			}, time)
+			
 		};
 
 		//Проверяет, открыта ли карта
